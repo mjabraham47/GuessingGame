@@ -11,16 +11,30 @@
 
   </head>
   <body>
-    var genNumber(i) = Math.floor((Math.random() * 100) + 1);
-    if (myGuess(i) === genNumber)
-      {<!-- figure out how to log to the screen -->}
 
+<!--if (myGuess(i) === genNumber)
+      {figure out how to log to the screen -->
+<script language="JavaScript">
+<!--
+function RandomNumber(upper_limit) 
+{ 
+return Math.round(upper_limit * Math.random()); 
+}
+//-->
+</script>
 
-   <div id = "numtable">
+<script language="JavaScript">
+<!--
+var upper_limit = 100;
+document.write('Here is a random number between 0 and ' 
++ upper_limit + ':<P><center>');
+document.write(RandomNumber(upper_limit) + '</center>');
+//-->
+</script>
       <table>
         <tr>
-        <td><div id = "one" onclick="myGuess(1)"> 1</div></td>
-        <td><div id = "two"> 2</div></td>
+        <td><div id = "one" onclick="myGuess(1)"><a href= /> 1</a></div></td>
+        <td><div id = "two">2</div></td>
         <td><div id = "three"> 3</div></td>
         <td><div id = "four"> 4</div></td>
         <td><div id = "five"> 5</div></td>
@@ -126,7 +140,6 @@
         <td><div id = "hundred">100 </div></td>
       </tr>
     </table>
-  </div>
 </body>
 </html>
 

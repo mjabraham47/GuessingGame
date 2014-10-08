@@ -8,9 +8,30 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:visited {
+    text-decoration: none;
+        color: #ffffff;
+}
+
+a:hover {
+    text-decoration: none;
+        color: #ffffff;
+
+}
+
+a:active {
+    text-decoration: none;
+        color: #ffffff;
+
+}
 
 h2 {
-    font-family: 'Pacifico', cursive;
+
   }
 
 h3 {
@@ -37,16 +58,9 @@ h3 {
 #thirtyone:hover, #thirtythree:hover, #thirtyfive:hover, #thirtyseven:hover, #thirtynine:hover, #fortytwo:hover, #fortyfour:hover, #fortysix:hover, #fortyeight:hover, #fifty:hover, #fiftytwo:hover, #fiftyfour:hover, #fiftysix:hover, #fiftyeight:hover, #sixty:hover,  
 #sixtyone:hover, #sixtythree:hover, #sixtyfive:hover, #sixtyseven:hover, #sixtynine:hover, #seventyone:hover, #seventythree:hover, #seventyfive:hover, #seventyseven:hover, #seventynine:hover,  #eightytwo:hover, #eightyfour:hover, #eightysix:hover,
 #eightyeight:hover, #ninety:hover, #ninetytwo:hover, #ninetyfour:hover, #ninetysix:hover, #ninetyeight:hover, #hundred:hover {
-  background-color: black;
-  color: white;
-  border: 2px solid white;
-  padding: 5px;
-  position: relative;
-  width: 21px;
-  text-align: center;
-  box-shadow: 2px 2px #000000;
-  margin: 2px;
+  background-color: green;
 }
+
 
 #one, #three, #five, #seven, #nine, #eleven, #thirteen, #fifteen, #seventeen, #nineteen,  #twentytwo, #twentyfour, #twentysix, #twentyeight, #thirty, #thirtytwo,
 #thirtyfour, #thirtysix, #thirtyeight, #forty, #fortyone,#sixtytwo, #sixtyfour, #sixtysix, #sixtyeight, #seventy, #seventytwo, #seventyfour, #seventysix, #seventyeight, #eighty,
@@ -62,4 +76,10 @@ h3 {
   box-shadow: 2px 2px #000000;
   margin: 2px;
 }
-       
+
+#one:hover, #three:hover, #five:hover, #seven:hover, #nine:hover, #eleven:hover, #thirteen:hover, #fifteen:hover, #seventeen:hover, #nineteen:hover,  #twentytwo:hover, #twentyfour:hover, #twentysix:hover, #twentyeight:hover, #thirty:hover, #thirtytwo:hover,
+#thirtyfour:hover, #thirtysix:hover, #thirtyeight:hover, #forty:hover, #fortyone:hover,#sixtytwo:hover, #sixtyfour:hover, #sixtysix:hover, #sixtyeight:hover, #seventy:hover, #seventytwo:hover, #seventyfour:hover, #seventysix:hover, #seventyeight:hover, #eighty:hover,
+#eightyone:hover, #eightythree:hover, #eightyfive:hover, #eightyseven:hover, #eightynine:hover, #ninetyone:hover, #ninetythree:hover, #ninetyfive:hover, #ninetyseven:hover, #ninetynine:hover,#fortythree:hover, #fortyfive:hover, #fortyseven:hover, #fortynine:hover, #fiftyone:hover, #fiftythree:hover, #fiftyfive:hover,
+#fiftyseven:hover, #fiftynine:hover {
+  background-color: green;
+}
