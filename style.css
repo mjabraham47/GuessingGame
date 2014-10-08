@@ -1,0 +1,82 @@
+body {
+	width: auto;
+	height: auto;
+  margin: auto;
+	padding: auto;
+	background-color: yellow;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+  }
+
+h3 {
+    font-family: 'Dosis', sans-serif;
+}
+
+#numtable {
+  position: relative;
+}
+
+#two, #four, #six, #eight, #ten, #twelve, #fourteen, #sixteen, #eighteen, #twenty, #twentyone, #twentythree, #twentyfive, #twentyseven, #twentynine,
+#thirtyone, #thirtythree, #thirtyfive, #thirtyseven, #thirtynine, #fortytwo, #fortyfour, #fortysix, #fortyeight, #fifty, #fiftytwo, #fiftyfour, #fiftysix, #fiftyeight, #sixty,  
+#sixtyone, #sixtythree, #sixtyfive, #sixtyseven, #sixtynine, #seventyone, #seventythree, #seventyfive, #seventyseven, #seventynine,  #eightytwo, #eightyfour, #eightysix,
+#eightyeight, #ninety, #ninetytwo, #ninetyfour, #ninetysix, #ninetyeight, #hundred {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 5px;
+  position: relative;
+  width: 15px;
+  text-align: center;
+  box-shadow: 2px 2px #000000;
+}
+
+
+#one, #three, #five, #seven, #nine, #eleven, #thirteen, #fifteen, #seventeen, #nineteen,  #twentytwo, #twentyfour, #twentysix, #twentyeight, #thirty, #thirtytwo,
+#thirtyfour, #thirtysix, #thirtyeight, #forty, #fortyone,#sixtytwo, #sixtyfour, #sixtysix, #sixtyeight, #seventy, #seventytwo, #seventyfour, #seventysix, #seventyeight, #eighty,
+#eightyone, #eightythree, #eightyfive, #eightyseven, #eightynine, #ninetyone, #ninetythree, #ninetyfive, #ninetyseven, #ninetynine,#fortythree, #fortyfive, #fortyseven, #fortynine, #fiftyone, #fiftythree, #fiftyfive,
+#fiftyseven, #fiftynine {
+  background-color: red;
+  color: white;
+  border: 2px solid white;
+  padding: 5px;
+  position: relative;
+  width: 15px;
+  text-align: center;
+  box-shadow: 2px 2px #000000;
+}
+
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% .6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content:"";
+  display:table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+       
