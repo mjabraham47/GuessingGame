@@ -1,57 +1,144 @@
 body {
-	width: auto;
-	height: auto;
-  margin: auto;
-	padding: auto;
-	background-color: green;
+  background-color: #bdbdbd;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+@font-face {
+    font-family: "frozen";
+    src: url('frozen.woff') format('woff');
+    font-weight: bold;
 }
 a:link {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 a:visited {
-    text-decoration: none;
-        color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 a:hover {
-    text-decoration: none;
-        color: #ffffff;
-
+  text-decoration: none;
+  color: #ffffff;
 }
 
 a:active {
-    text-decoration: none;
-        color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+}
 
+h1 {
 }
 
 h2 {
-
-  }
-
-h3 {
-    font-family: 'Dosis', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+  text-shadow: 3px 3px 2px #ffffff;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.top-row {
+  width: 1200px;
+  margin-top: 0;
+  background-color: #bdbdbd;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.top-left {
+ width: 600px;
+ float: left;
+ background-color: #bdbdbd;
+ height: inherit;
+}
+
+.top-right {
+   width: 600px;
+   float: right;
+   background-color: #bdbdbd;
+   height: inherit;
+}
+
+.game-row {
+  width: auto;
+  background-color: #d3d3d3;
+  box-shadow-top: 3px #000000;
+  box-shadow-bottom: 3px #000000;
+  height: 500px;
+}
+
+.game-board {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game-left {
+  width: 600px;
+  float: left;
+}
+.game-right {
+
+}
+.hc {
+  float: left;
+  width: 300px;
+}
+.hl {
+  float: right;
+  width: 300px;
+}
+
+.bottom-row {
+  margin-top: 50px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #bdbdbd;
+  height: 200px;
+}
+
+.bottom-left {
+  width: 600px;
+  float: left;
+}
+.bottom-right {
+  width: 600px;
+  float: right;
+
+}
+
+.game-board table {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.guesses table {
+}
 
 #two, #four, #six, #eight, #ten, #twelve, #fourteen, #sixteen, #eighteen, #twenty, #twentyone, #twentythree, #twentyfive, #twentyseven, #twentynine,
 #thirtyone, #thirtythree, #thirtyfive, #thirtyseven, #thirtynine, #fortytwo, #fortyfour, #fortysix, #fortyeight, #fifty, #fiftytwo, #fiftyfour, #fiftysix, #fiftyeight, #sixty,  
 #sixtyone, #sixtythree, #sixtyfive, #sixtyseven, #sixtynine, #seventyone, #seventythree, #seventyfive, #seventyseven, #seventynine,  #eightytwo, #eightyfour, #eightysix,
 #eightyeight, #ninety, #ninetytwo, #ninetyfour, #ninetysix, #ninetyeight, #hundred {
   background-color: black;
-  color: white;
-  border: 2px solid white;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   padding: 5px;
-  position: relative;
-  width: 20px;
+  width: 35px;
   text-align: center;
-  box-shadow: 2px 2px #000000;
   margin: 2px;
+  box-shadow: 2px 2px 1px #000000;
+  border-radius: 5px;
+
 }
 
 #two:hover, #four:hover, #six:hover, #eight:hover, #ten:hover, #twelve:hover, #fourteen:hover, #sixteen:hover, #eighteen:hover, #twenty:hover, #twentyone:hover, #twentythree:hover, #twentyfive:hover, #twentyseven:hover, #twentynine:hover,
@@ -62,19 +149,21 @@ h3 {
 }
 
 
+
 #one, #three, #five, #seven, #nine, #eleven, #thirteen, #fifteen, #seventeen, #nineteen,  #twentytwo, #twentyfour, #twentysix, #twentyeight, #thirty, #thirtytwo,
 #thirtyfour, #thirtysix, #thirtyeight, #forty, #fortyone,#sixtytwo, #sixtyfour, #sixtysix, #sixtyeight, #seventy, #seventytwo, #seventyfour, #seventysix, #seventyeight, #eighty,
 #eightyone, #eightythree, #eightyfive, #eightyseven, #eightynine, #ninetyone, #ninetythree, #ninetyfive, #ninetyseven, #ninetynine,#fortythree, #fortyfive, #fortyseven, #fortynine, #fiftyone, #fiftythree, #fiftyfive,
 #fiftyseven, #fiftynine {
   background-color: red;
-  color: white;
-  border: 2px solid white;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   padding: 5px;
-  position: relative;
-  width: 20px;
+  width: 35px;
   text-align: center;
-  box-shadow: 2px 2px #000000;
   margin: 2px;
+  box-shadow: 1px 2px 1px #000000;
+  border-radius: 5px;
+
 }
 
 #one:hover, #three:hover, #five:hover, #seven:hover, #nine:hover, #eleven:hover, #thirteen:hover, #fifteen:hover, #seventeen:hover, #nineteen:hover,  #twentytwo:hover, #twentyfour:hover, #twentysix:hover, #twentyeight:hover, #thirty:hover, #thirtytwo:hover,
@@ -83,3 +172,186 @@ h3 {
 #fiftyseven:hover, #fiftynine:hover {
   background-color: green;
 }
+
+.game-board td:hover {
+  font-size: 20px;
+  cursor: help;
+}
+
+.game-board td #hundred:hover {
+  font-size: 18px;
+  height: 20px;
+}
+#guesses{
+  margin-right: 20px;
+  width: 550px;
+  background-color: #d3d3d3;
+  box-shadow: 1px 1px black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#hint {
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 60px;
+  text-align: center;
+  width: 600px;    
+  float: left;
+  box-shadow: 1px 1px black;
+  margin-top: 175px;
+}
+.guess {
+  background-color: #B0E0E6;
+  color: #000000;
+  border: 2px solid #ffffff;
+  padding: 5px;
+  width: 35px;
+  text-align: center;
+  margin: 0px;
+  margin-right: 2px;
+  box-shadow: 1px 2px 1px #000000;
+  border-radius: 5px;
+}
+.guessblank {
+  background-color: green;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 5px;
+  width: 35px;
+  text-align: center;
+  margin: 0px;
+  margin-right: 2px;
+  box-shadow: 1px 2px 1px #000000;
+  border-radius: 5px;
+}
+#welcome{
+  box-shadow: 1px 1px black;
+  background-color: #a8a8a8;
+  color: #ffffff;
+  font-size: 60px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 0px;
+  text-shadow: 3px 3px 2px #000000;
+  width: 590px;
+  margin-top: 15px;
+}
+
+#newgame{
+  box-shadow: 1px 1px black;
+  background-color: #a8a8a8;
+  color: #ffffff;
+  font-size: 60px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 0px;
+  text-shadow: 3px 3px 2px #000000;
+  width: 590px;
+  margin-top: 15px;
+}
+
+#higher { 
+  margin-top: 50px;
+  background-color: #228B22;
+  box-shadow: 1px 1px black;
+  color: #ffffff;
+  font-size: 60px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 0px;
+  text-shadow: 3px 3px 2px #000000;
+  width: 291px;
+  -webkit-transition: margin-top 2s; /* For Safari 3.1 to 6.0 */
+  transition: margin-top 2s;
+  float: right;
+}
+
+#higher:hover {
+  margin-top: -100px;
+}
+
+#lower {
+  background-color: #228B22;
+  box-shadow: 1px 1px black;
+  color: #ffffff;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 3px 3px 2px #000000;
+  width: 291px;
+  -webkit-transition: margin-top 2s; /* For Safari 3.1 to 6.0 */
+  transition: margin-top 2s;
+  float: right;
+  border-radius: 5px;
+  position: fixed;
+  margin-top: 140px;
+  margin-left: 10px
+}
+
+#lower:hover {
+  margin-top: 260px;
+}
+
+#hot {
+  font-family: "frozen";
+  color: black;
+  box-shadow: 1px 1px black;
+  border-radius: 5px;
+  background-color: #ff2600;
+  font-size: 60px;
+  text-align: center;      
+  width: 291px;
+  float: left;
+  margin-top: 50px;
+}
+
+#hot:hover {
+    text-shadow:0 0 4px #ffffff, 0 -5px 4px #FFFF33, 2px -10px 6px #FFDD33, -2px -15px 11px #FF8800, 2px  -25px 18px #FF2200;
+}
+
+@-webkit-keyframes wiggle
+{
+    0% {-webkit-transform: rotateZ(2deg);}
+    50% {-webkit-transform: rotateZ(-2deg);}
+    100% {-webkit-transform: rotateZ(2deg);}
+}
+@-moz-keyframes wiggle
+{
+    0% {-moz-transform: rotateZ(2deg);}
+    50% {-moz-transform: rotateZ(-2deg);}
+    100% {-moz-transform: rotateZ(2deg);}
+}
+@-o-keyframes wiggle
+{
+    0% {-o-transform: rotateZ(2deg);}
+    50% {-o-transform: rotateZ(-2deg);}
+    100% {-o-transform: rotateZ(2deg);}
+}
+@keyframes wiggle
+{
+    0% {transform: rotateZ(2deg);}
+    50% {transform: rotateZ(-2deg);}
+    100% {transform: rotateZ(2deg);}
+}
+
+#cold {
+  font-family: "frozen";
+  background-color: #B0E0E6;
+  border-radius: 5px;
+  color: #f3f3f3;
+  font-size: 60px;
+  text-align: center;
+  width: 291px;    
+  float: left;
+  box-shadow: 1px 1px black;
+  margin-top: 20px;
+}
+
+#cold:hover {
+    -webkit-animation: wiggle 0.2s ease infinite;
+    -moz-animation: wiggle 0.2s ease infinite;
+    -o-animation: wiggle 0.2s ease infinite;
+    animation: wiggle 0.2s ease infinite;
+}
+  

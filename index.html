@@ -2,144 +2,212 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Guessing Game</title>
-
-    <link rel="stylesheet" href="style.css">
-
-
+    
+    <title>Guessing Game!</title>
+    
+    <link href="style.css" rel="stylesheet">
   </head>
-  <body>
 
-<!--if (myGuess(i) === genNumber)
-      {figure out how to log to the screen -->
-<script language="JavaScript">
-<!--
-function RandomNumber(upper_limit) 
-{ 
-return Math.round(upper_limit * Math.random()); 
-}
-//-->
-</script>
-
-<script language="JavaScript">
-<!--
-var upper_limit = 100;
-document.write('Here is a random number between 0 and ' 
-+ upper_limit + ':<P><center>');
-document.write(RandomNumber(upper_limit) + '</center>');
-//-->
-</script>
-      <table>
-        <tr>
-        <td><div id = "one" onclick="myGuess(1)"><a href= /> 1</a></div></td>
-        <td><div id = "two">2</div></td>
-        <td><div id = "three"> 3</div></td>
-        <td><div id = "four"> 4</div></td>
-        <td><div id = "five"> 5</div></td>
-        <td><div id = "six"> 6</div></td>
-        <td><div id = "seven"> 7</div></td>
-        <td><div id = "eight"> 8</div></td>
-        <td><div id = "nine"> 9</div></td>
-        <td><div id = "ten"> 10</div></td>
-        <td><div id = "eleven">11 </div></td>   
-        <td><div id = "twelve"> 12</div></td>
-        <td><div id = "thirteen"> 13</div></td>
-        <td><div id = "fourteen"> 14</div> </td>
-        <td><div id = "fifteen"> 15</div></td>
-        <td><div id = "sixteen"> 16</div></td>
-        <td><div id = "seventeen">17 </div></td>
-        <td><div id = "eighteen">18 </div></td>
-        <td><div id = "nineteen">19 </div></td>
-        <td><div id = "twenty">20 </div></td>
-        </tr>
-        <tr>
-        <td><div id = "twentyone">21 </div></td>
-        <td><div id = "twentytwo">22 </div></td>
-        <td><div id = "twentythree">23 </div></td>
-        <td><div id = "twentyfour">24 </div></td>
-        <td><div id = "twentyfive">25</div></td>
-        <td><div id = "twentysix">26 </div></td>
-        <td><div id = "twentyseven">27 </div></td>
-        <td><div id = "twentyeight"> 28 </div></td>
-        <td><div id = "twentynine">29 </div></td>
-        <td><div id = "thirty"> 30 </div></td>
-        <td><div id = "thirtyone"> 31</div></td>
-        <td><div id = "thirtytwo">32 </div> </td>  
-        <td><div id = "thirtythree"> 33 </div></td>
-        <td><div id = "thirtyfour"> 34 </div></td>
-        <td><div id = "thirtyfive"> 35 </div> </td>
-        <td><div id = "thirtysix"> 36</div></td>
-        <td><div id = "thirtyseven">37 </div></td>
-        <td><div id = "thirtyeight">38 </div></td>
-        <td><div id = "thirtynine">39 </div></td>
-        <td><div id = "forty">40 </div></td>
-      </tr>
-        <td><div id = "fortyone">41 </div></td>
-        <td><div id = "fortytwo">42 </div></td>
-        <td><div id = "fortythree">43 </div></td>
-        <td><div id = "fortyfour">44 </div></td>
-        <td><div id = "fortyfive">45</div></td>
-        <td><div id = "fortysix">46 </div></td>
-        <td><div id = "fortyseven">47 </div></td>
-        <td><div id = "fortyeight"> 48 </div></td>
-        <td><div id = "fortynine">49 </div></td>
-        <td><div id = "fifty"> 50 </div></td>
-        <td><div id = "fiftyone"> 51</div></td>
-        <td><div id = "fiftytwo">52 </div> </td>  
-        <td><div id = "fiftythree"> 53 </div></td>
-        <td><div id = "fiftyfour"> 54 </div></td>
-        <td><div id = "fiftyfive"> 55 </div> </td>
-        <td><div id = "fiftysix"> 56</div></td>
-        <td><div id = "fiftyseven">57 </div></td>
-        <td><div id = "fiftyeight">58 </div></td>
-        <td><div id = "fiftynine">59 </div></td>
-        <td><div id = "sixty">60 </div></td>
-      </tr>
-        <td><div id = "sixtyone">61 </div></td>
-        <td><div id = "sixtytwo">62 </div></td>
-        <td><div id = "sixtythree">63 </div></td>
-        <td><div id = "sixtyfour">64 </div></td>
-        <td><div id = "sixtyfive">65</div></td>
-        <td><div id = "sixtysix">66 </div></td>
-        <td><div id = "sixtyseven">67 </div></td>
-        <td><div id = "sixtyeight"> 68 </div></td>
-        <td><div id = "sixtynine">69 </div></td>
-        <td><div id = "seventy"> 70 </div></td>
-        <td><div id = "seventyone"> 71</div></td>
-        <td><div id = "seventytwo">72 </div> </td>  
-        <td><div id = "seventythree"> 73 </div></td>
-        <td><div id = "seventyfour"> 74 </div></td>
-        <td><div id = "seventyfive"> 75 </div> </td>
-        <td><div id = "seventysix"> 76</div></td>
-        <td><div id = "seventyseven">77 </div></td>
-        <td><div id = "seventyeight">78 </div></td>
-        <td><div id = "seventynine">79 </div></td>
-        <td><div id = "eighty">80 </div></td>
-      </tr>
-        <td><div id = "eightyone">81 </div></td>
-        <td><div id = "eightytwo">82 </div></td>
-        <td><div id = "eightythree">83 </div></td>
-        <td><div id = "eightyfour">84 </div></td>
-        <td><div id = "eightyfive">85</div></td>
-        <td><div id = "eightysix">86</div></td>
-        <td><div id = "eightyseven">87 </div></td>
-        <td><div id = "eightyeight"> 88 </div></td>
-        <td><div id = "eightynine">89 </div></td>
-        <td><div id = "ninety"> 90 </div></td>
-        <td><div id = "ninetyone"> 91</div></td>
-        <td><div id = "ninetytwo">92 </div> </td>  
-        <td><div id = "ninetythree"> 93 </div></td>
-        <td><div id = "ninetyfour"> 94 </div></td>
-        <td><div id = "ninetyfive"> 95 </div> </td>
-        <td><div id = "ninetysix"> 96</div></td>
-        <td><div id = "ninetyseven">97 </div></td>
-        <td><div id = "ninetyeight">98 </div></td>
-        <td><div id = "ninetynine">99 </div></td>
-        <td><div id = "hundred">100 </div></td>
-      </tr>
-    </table>
+<body>
+<div class ="container">
+    <div class="top-row">
+        <div class="top-left">
+            <div id="welcome">
+                Pick a Number!!
+            </div>
+        </div>
+        <div class="top-right">
+            <div id="newgame">
+                NEW GAME
+            </div>
+        </div>
+    </div>
+    <div class="game-row">
+        <div class="game-board">
+            <div class="game-left">
+                <table>
+                    <tr>
+                    <td><div id="one"> 1 </div></td>
+                    <td><div id="two">2</div></td>
+                    <td><div id="three">3</div></td>
+                    <td><div id="four">4</div></td>
+                    <td><div id="five">5</div></td>
+                    <td><div id="six">6</div></td>
+                    <td><div id="seven">7</div></td>
+                    <td><div id="eight">8</div></td>
+                    <td><div id="nine">9</div></td>
+                    <td><div id="ten">10</div></td>
+                    </tr>
+                    <tr>
+                    <td><div id="eleven">11</div></td>   
+                    <td><div id="twelve">12</div></td>
+                    <td><div id="thirteen">13</div></td>
+                    <td><div id="fourteen">14</div></td>
+                    <td><div id="fifteen">15</div></td>
+                    <td><div id="sixteen">16</div></td>
+                    <td><div id="seventeen">17</div></td>
+                    <td><div id="eighteen">18</div></td>
+                    <td><div id="nineteen">19</div></td>
+                    <td><div id="twenty">20</div></td>
+                    </tr>
+                    <tr>
+                    <td><div id="twentyone">21</div></td>
+                    <td><div id="twentytwo">22</div></td>
+                    <td><div id="twentythree">23</div></td>
+                    <td><div id="twentyfour">24</div></td>
+                    <td><div id="twentyfive">25</div></td>
+                    <td><div id="twentysix">26</div></td>
+                    <td><div id="twentyseven">27</div></td>
+                    <td><div id="twentyeight">28</div></td>
+                    <td><div id="twentynine">29</div></td>
+                    <td><div id="thirty">30</div></td>
+                   </tr>
+                    <tr>
+                    <td><div id="thirtyone">31</div></td>
+                    <td><div id="thirtytwo">32</div> </td>  
+                    <td><div id="thirtythree">33</div></td>
+                    <td><div id="thirtyfour"> 34</div></td>
+                    <td><div id="thirtyfive">35</div> </td>
+                    <td><div id="thirtysix">36</div></td>
+                    <td><div id="thirtyseven">37</div></td>
+                    <td><div id="thirtyeight">38</div></td>
+                    <td><div id="thirtynine">39</div></td>
+                    <td><div id="forty">40</div></td>
+                    </tr>
+                    <tr>
+                    <td><div id="fortyone">41</div></td>
+                    <td><div id="fortytwo">42</div></td>
+                    <td><div id="fortythree">43</div></td>
+                    <td><div id="fortyfour">44</div></td>
+                    <td><div id="fortyfive">45</div></td>
+                    <td><div id="fortysix">46</div></td>
+                    <td><div id="fortyseven">47</div></td>
+                    <td><div id="fortyeight">48</div></td>
+                    <td><div id="fortynine">49</div></td>
+                    <td><div id="fifty">50</div></td>
+                    </tr>
+                    <tr>
+                    <td><div id="fiftyone">51</div></td>
+                    <td><div id="fiftytwo">52</div> </td>  
+                    <td><div id="fiftythree">53</div></td>
+                    <td><div id="fiftyfour">54</div></td>
+                    <td><div id="fiftyfive">55</div> </td>
+                    <td><div id="fiftysix">56</div></td>
+                    <td><div id="fiftyseven">57</div></td>
+                    <td><div id="fiftyeight">58</div></td>
+                    <td><div id="fiftynine">59</div></td>
+                    <td><div id="sixty">60</div></td>
+                    </tr>
+                    <tr>
+                    <td><div id="sixtyone">61</div></td>
+                    <td><div id="sixtytwo">62</div></td>
+                    <td><div id="sixtythree">63</div></td>
+                    <td><div id="sixtyfour">64</div></td>
+                    <td><div id="sixtyfive">65</div></td>
+                    <td><div id="sixtysix">66</div></td>
+                    <td><div id="sixtyseven">67</div></td>
+                    <td><div id="sixtyeight">68</div></td>
+                    <td><div id="sixtynine">69</div></td>
+                    <td><div id="seventy">70</div></td>
+                    </tr>
+                    <tr>
+                    <td><div id="seventyone">71</div></td>
+                    <td><div id="seventytwo">72 </div> </td>  
+                    <td><div id="seventythree">73</div></td>
+                    <td><div id="seventyfour">74</div></td>
+                    <td><div id="seventyfive">75</div> </td>
+                    <td><div id="seventysix">76</div></td>
+                    <td><div id="seventyseven">77</div></td>
+                    <td><div id="seventyeight">78</div></td>
+                    <td><div id="seventynine">79</div></td>
+                    <td><div id="eighty">80</div></td>
+                    </tr>
+                    <tr>
+                    <td><div id="eightyone">81</div></td>
+                    <td><div id="eightytwo">82</div></td>
+                    <td><div id="eightythree">83</div></td>
+                    <td><div id="eightyfour">84</div></td>
+                    <td><div id="eightyfive">85</div></td>
+                    <td><div id="eightysix">86</div></td>
+                    <td><div id="eightyseven">87</div></td>
+                    <td><div id="eightyeight">88</div></td>
+                    <td><div id="eightynine">89</div></td>
+                    <td><div id="ninety">90</div></td>
+                    </tr>
+                    <tr>
+                    <td><div id="ninetyone">91</div></td>
+                    <td><div id="ninetytwo">92</div> </td>  
+                    <td><div id="ninetythree">93</div></td>
+                    <td><div id="ninetyfour">94</div></td>
+                    <td><div id="ninetyfive">95</div> </td>
+                    <td><div id="ninetysix">96</div></td>
+                    <td><div id="ninetyseven">97</div></td>
+                    <td><div id="ninetyeight">98</div></td>
+                    <td><div id="ninetynine">99</div></td>
+                    <td><div id="hundred">100</div></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="game-right">
+                <div class="hc">
+                    <div id="hot">
+                        HOT
+                    </div>
+                    <div id="cold">
+                        COLD
+                    </div>
+                <div id ="hint">
+                    <h2>Get a Hint!</h2>
+                 </div>  
+                </div>
+                <div class="hl"> 
+                    <div id="higher">
+                            HIGHER
+                    </div>
+                     
+                    <div id="lower">
+                            LOWER
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <div class="bottom-row">
+        <div class="bottom-left">
+            <div id="guesses">
+                <h2>GUESSES</h2>
+                <table>
+                    <tr>
+                    <td><div class="guess">1</div></td>
+                    <td><div class="guess">2</div></td>
+                    <td><div class="guess">3</div></td>
+                    <td><div class="guess">4</div></td>
+                    <td><div class="guess">5</div></td>
+                    <td><div class="guess">6</div></td>
+                    <td><div class="guess">7</div></td>
+                    <td><div class="guess">8</div></td>
+                    <td><div class="guess">9</div></td>
+                    <td><div class="guess">10</div></td>
+                    </tr>
+                    <tr>
+                    <td><div class="guessblank">?</div></td>
+                    <td><div class="guessblank">?</div></td>
+                    <td><div class="guessblank">?</div></td>
+                    <td><div class="guessblank">?</div></td>
+                    <td><div class="guessblank">?</div></td>
+                    <td><div class="guessblank">?</div></td>
+                    <td><div class="guessblank">?</div></td>
+                    <td><div class="guessblank">?</div></td>
+                    <td><div class="guessblank">?</div></td>
+                    <td><div class="guessblank">?</div></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="bottom-right">
+        </div>
+    </div>
+</div>
 </body>
 </html>
-
