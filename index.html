@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Guessing Game!</title>
-    
     <link href="style.css" rel="stylesheet">
   </head>
 
@@ -14,18 +13,24 @@
     <div class="top-row">
         <div class="top-left">
             <div id="welcome">
-                Pick a Number!!
+                <bold>PICK A NUMBER</bold>
             </div>
         </div>
         <div class="top-right">
             <div id="newgame">
-                NEW GAME
+                <a href="index.html"><bold>NEW GAME</bold></a>
             </div>
         </div>
     </div>
     <div class="game-row">
         <div class="game-board">
             <div class="game-left">
+            <div id ="winner">
+                YOU WIN!!!!!
+            </div>
+            <div id="loser">
+                <a href="index.html">TRY AGAIN</a>
+            </div>
                 <table>
                     <tr>
                     <td><div id="one"> 1 </div></td>
@@ -157,15 +162,49 @@
                     <div id="cold">
                         COLD
                     </div>
-                <div id ="hint">
-                    <h2>Get a Hint!</h2>
-                 </div>  
+                    <div id ="hint">
+                        GET A HINT
+                     </div>  
+                    <div id="guesses">
+                        <div class="guess-table">
+                            <table>
+                                <tr>
+                                <td><div class="guess">1st Guess</div></td>
+                                <td><div class="guess">2nd Guess</div></td>
+                                <td><div class="guess">3rd Guess</div></td>
+                                <td><div class="guess">4th Guess</div></td>
+                                <td><div class="guess">5th Guess</div></td>
+                                <td><div class="guess">6th Guess</div></td>
+                                <td><div class="guess">7th Guess</div></td>
+                                <td><div class="guess">8th Guess</div></td>
+                                <td><div class="guess">9th Guess</div></td>
+                                <td><div class="guess">10th Guess</div></td>
+                                </tr>
+                                <tr>
+                                <td><div class="guessblank" id ="g-one">?</div></td>
+                                <td><div class="guessblank" id ="g-two">?</div></td>
+                                <td><div class="guessblank" id ="g-three">?</div></td>
+                                <td><div class="guessblank" id ="g-four">?</div></td>
+                                <td><div class="guessblank" id ="g-five">?</div></td>
+                                <td><div class="guessblank" id ="g-six">?</div></td>
+                                <td><div class="guessblank" id ="g-seven">?</div></td>
+                                <td><div class="guessblank" id ="g-eight">?</div></td>
+                                <td><div class="guessblank" id ="g-nine">?</div></td>
+                                <td><div class="guessblank" id ="g-ten">?</div></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="repeat">
+                             REPEAT
+                        </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="hl"> 
                     <div id="higher">
                             HIGHER
                     </div>
-                     
                     <div id="lower">
                             LOWER
                     </div>
@@ -175,39 +214,12 @@
     </div>
     <div class="bottom-row">
         <div class="bottom-left">
-            <div id="guesses">
-                <h2>GUESSES</h2>
-                <table>
-                    <tr>
-                    <td><div class="guess">1</div></td>
-                    <td><div class="guess">2</div></td>
-                    <td><div class="guess">3</div></td>
-                    <td><div class="guess">4</div></td>
-                    <td><div class="guess">5</div></td>
-                    <td><div class="guess">6</div></td>
-                    <td><div class="guess">7</div></td>
-                    <td><div class="guess">8</div></td>
-                    <td><div class="guess">9</div></td>
-                    <td><div class="guess">10</div></td>
-                    </tr>
-                    <tr>
-                    <td><div class="guessblank">?</div></td>
-                    <td><div class="guessblank">?</div></td>
-                    <td><div class="guessblank">?</div></td>
-                    <td><div class="guessblank">?</div></td>
-                    <td><div class="guessblank">?</div></td>
-                    <td><div class="guessblank">?</div></td>
-                    <td><div class="guessblank">?</div></td>
-                    <td><div class="guessblank">?</div></td>
-                    <td><div class="guessblank">?</div></td>
-                    <td><div class="guessblank">?</div></td>
-                    </tr>
-                </table>
-            </div>
         </div>
         <div class="bottom-right">
         </div>
     </div>
 </div>
+    <script type='text/javascript' src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type='text/javascript' src='script.js'></script>
 </body>
 </html>
